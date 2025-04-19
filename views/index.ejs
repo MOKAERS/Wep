@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>KeyAuth Checker</title>
+</head>
+<body style="text-align:center; margin-top:100px; font-family:sans-serif;">
+  <h1>تحقق من الكي</h1>
+  <form method="POST" action="/check">
+    <input type="text" name="key" placeholder="ادخل الكي هنا" required />
+    <button type="submit">تحقق</button>
+  </form>
+  <% if (result) { %>
+    <p style="margin-top:20px;"><strong><%= result %></strong></p>
+  <% } %>
+</body>
+</html>
